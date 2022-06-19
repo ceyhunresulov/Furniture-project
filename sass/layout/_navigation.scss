@@ -1,11 +1,9 @@
 #nav__top{
-    border: 1px solid red;
     width: 70%;
     @extend .flex-center-y;
     ul{
         width: 40%;
         height: 100px;
-        border: 1px solid blue;
         @extend .flex-center-y
     }
 }

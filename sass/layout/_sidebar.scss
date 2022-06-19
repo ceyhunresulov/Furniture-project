@@ -1,0 +1,23 @@
+#slider{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    .slides{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .slide{
+        border: 4px solid white;
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
