@@ -1,9 +1,11 @@
-#nav__top{
+#nav__top, #nav__katalog{
     h1{
-        color: white
+        color: white;
+        font-size: 2em;
     }
     li{
-        font-size: $nav-font-size;
+        font-size: 2em;
         color: white;
     }
 }
+
