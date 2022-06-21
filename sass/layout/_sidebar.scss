@@ -2,8 +2,9 @@
     width: 100%;
     height: 650px;
     position: relative;
+    overflow: hidden;
     .slides{
-        width: 100%;
+        width: auto;
         height: 100%;
         display: flex;
         position: absolute;
@@ -11,8 +12,7 @@
         top: 0;
     }
     .slide{
-        border: 4px solid white;
-        width: 50%;
+        width: 100vw;
         height: 100%;
         img{
             width: 100%;

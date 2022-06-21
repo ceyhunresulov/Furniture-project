@@ -1,15 +1,15 @@
 #gallery{
-    margin-top: 50px;
     background-color: $main-color;
     height: auto;
     padding-bottom: 1em;
     box-sizing: border-box;
+    &__title{
+        margin: 2em;
+    }
     &__grid{
         display: flex;
         flex-wrap: wrap;
-        li{
-            @include grid(3,2%);
-            height: 500px;
+        li{     
             background-color:white;
             img{
                 width: 100%;
@@ -19,10 +19,32 @@
         }
     }
 }
+
+
+#instagram{
+    height: 200px;
+    background-color: $secondary-color;
+    @extend .flex-center;
+    flex-direction: column;
+    h2{
+        margin-bottom: 1.5em;
+    } 
+}
+
+
+@media  (max-width: 1900px){
+    #gallery__grid{
+        li{
+            @include grid(4,1%);
+            height: 250px;
+        }
+    }
+}
 @media  (max-width: 1120px){
     #gallery__grid{
         li{
-            @include grid(3,2%);
+            @include grid(3,1%);
+            height: 300px;
         }
     }
 }

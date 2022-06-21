@@ -9,12 +9,47 @@
 }
 #nav__katalog{
     width: 100%;
-    height: 100px;
-    // background-color: $main-color;
+    height: 300px;
+    background-color: $secondary-color;
+    box-shadow: 1px 1px 5px gray;
     @extend .flex-center;
     ul{
-        width: 50%;
-        @extend .flex-center-y
+        width: 80%;
+        @extend .flex-center-y;
+        li{
+            margin: 0.5em;
+            padding: 2em;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 10px 2px black;
+            @extend .flex-y;  
+            a{
+                width: 100px;
+                height: 100px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            i{
+                display: block;
+            }
+        }
 
     }  
+}
+
+#nav__footer{
+    width: 70%;
+    height: 100%;
+    @extend .flex-between;
+    ul{
+        li{
+            margin: 1em;
+        }
+    }
+}
+#gallery__plus{
+    width: 100%;
+    height: 100px;
+    @extend .flex-center;
 }

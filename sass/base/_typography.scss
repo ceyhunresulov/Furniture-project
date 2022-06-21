@@ -1,4 +1,4 @@
-#nav__top, #nav__katalog{
+#nav__top, #nav__katalog,#nav__footer{
     h1{
         color: white;
         font-size: 2em;
@@ -9,3 +9,23 @@
     }
 }
 
+#nav__footer{
+    a{
+        color: white;
+    }
+    
+}
+#instagram{
+    a{
+        font-size: 3em;
+        color: $main-color;
+        margin-bottom: 1.5em;
+    }
+    
+}
+
+#gallery__title{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}

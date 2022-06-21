@@ -4,18 +4,18 @@ body {
 }
 
 .flex-center-x {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.flex-center-y, #nav__top, #nav__top ul, #nav__katalog ul, .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.flex-center-y, #nav__top, #nav__top ul, #nav__katalog ul, footer .sosial ul, .button {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -24,7 +24,7 @@ body {
           align-items: center;
 }
 
-.flex-center, #nav__katalog, header {
+.flex-center, #nav__katalog, #gallery__plus, #instagram, header, footer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -34,6 +34,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex-between, #nav__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-y, #nav__katalog ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-v-1, .button__plus {
+  border-color: white;
+  border-radius: 5px;
+  padding: 7px 15px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -49,6 +80,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   border: 0;
@@ -85,14 +117,30 @@ table {
   border-spacing: 0;
 }
 
-#nav__top h1, #nav__katalog h1 {
+#nav__top h1, #nav__katalog h1, #nav__footer h1 {
   color: white;
   font-size: 2em;
 }
 
-#nav__top li, #nav__katalog li {
+#nav__top li, #nav__katalog li, #nav__footer li {
   font-size: 2em;
   color: white;
+}
+
+#nav__footer a {
+  color: white;
+}
+
+#instagram a {
+  font-size: 3em;
+  color: #372424;
+  margin-bottom: 1.5em;
+}
+
+#gallery__title {
+  font-size: 3em;
+  color: white;
+  text-align: center;
 }
 
 #nav__top {
@@ -106,20 +154,63 @@ table {
 
 #nav__katalog {
   width: 100%;
-  height: 100px;
+  height: 300px;
+  background-color: #cbc2b9;
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
 }
 
 #nav__katalog ul {
-  width: 50%;
+  width: 80%;
+}
+
+#nav__katalog ul li {
+  margin: 0.5em;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 1px 1px 10px 2px black;
+          box-shadow: 1px 1px 10px 2px black;
+}
+
+#nav__katalog ul li a {
+  width: 100px;
+  height: 100px;
+}
+
+#nav__katalog ul li a img {
+  height: 100%;
+  width: 100%;
+}
+
+#nav__katalog ul li i {
+  display: block;
+}
+
+#nav__footer {
+  width: 70%;
+  height: 100%;
+}
+
+#nav__footer ul li {
+  margin: 1em;
+}
+
+#gallery__plus {
+  width: 100%;
+  height: 100px;
 }
 
 #gallery {
-  margin-top: 50px;
   background-color: #372424;
   height: auto;
   padding-bottom: 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#gallery__title {
+  margin: 2em;
 }
 
 #gallery__grid {
@@ -131,15 +222,7 @@ table {
 }
 
 #gallery__grid li {
-  width: calc(32%);
-  margin-right: 2%;
-  margin-bottom: 2%;
-  height: 500px;
   background-color: white;
-}
-
-#gallery__grid li:nth-child(3n) {
-  margin-right: 0;
 }
 
 #gallery__grid li img {
@@ -149,11 +232,37 @@ table {
      object-fit: cover;
 }
 
+#instagram {
+  height: 200px;
+  background-color: #cbc2b9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#instagram h2 {
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 1900px) {
+  #gallery__grid li {
+    width: calc(24.25%);
+    margin-right: 1%;
+    margin-bottom: 1%;
+    height: 250px;
+  }
+  #gallery__grid li:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1120px) {
   #gallery__grid li {
-    width: calc(32%);
-    margin-right: 2%;
-    margin-bottom: 2%;
+    width: calc(32.66667%);
+    margin-right: 1%;
+    margin-bottom: 1%;
+    height: 300px;
   }
   #gallery__grid li:nth-child(3n) {
     margin-right: 0;
@@ -165,14 +274,57 @@ header {
   background-color: #372424;
 }
 
+header .header__logo {
+  height: 90px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+header .header__logo img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+footer {
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+  background-color: #372424;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .logo {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+footer .logo img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #slider {
   width: 100%;
   height: 650px;
   position: relative;
+  overflow: hidden;
 }
 
 #slider .slides {
-  width: 100%;
+  width: auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,8 +335,7 @@ header {
 }
 
 #slider .slide {
-  border: 4px solid white;
-  width: 50%;
+  width: 100vw;
   height: 100%;
 }
 
@@ -208,11 +359,16 @@ header {
 }
 
 .button button {
-  background: none;
+  background-color: lightgray;
   border: none;
 }
 
 .button .fas {
   font-size: 40px;
   color: #372424;
+}
+
+.button__plus {
+  background: none;
+  color: white;
 }

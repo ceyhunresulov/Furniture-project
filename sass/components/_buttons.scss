@@ -8,7 +8,7 @@
     box-sizing: border-box;
     @extend .flex-center-y;
     button{
-        background: none;
+        background-color: lightgray;
         border: none;
     }
     .fas{
@@ -16,4 +16,10 @@
         color: $main-color;
     }
 
+}
+
+.button__plus{
+    background:none;
+    color: white;
+    @extend .button-v-1
 }
