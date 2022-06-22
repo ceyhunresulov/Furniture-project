@@ -19,6 +19,7 @@
         li{
             margin: 0.5em;
             padding: 2em;
+            border-radius: 20px;
             box-sizing: border-box;
             box-shadow: 1px 1px 10px 2px black;
             @extend .flex-y;  

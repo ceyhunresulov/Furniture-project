@@ -167,6 +167,7 @@ table {
 #nav__katalog ul li {
   margin: 0.5em;
   padding: 2em;
+  border-radius: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 1px 1px 10px 2px black;
