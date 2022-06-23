@@ -12,7 +12,7 @@ body {
           justify-content: center;
 }
 
-.flex-center-y, #nav__top, #nav__top ul, #nav__katalog ul, footer .sosial ul, .button {
+.flex-center-y, #nav__top, #nav__top ul, #nav__katalog ul, #child ul, footer .sosial ul, .button {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -24,7 +24,7 @@ body {
           align-items: center;
 }
 
-.flex-center, #nav__katalog, #gallery__plus, #instagram, header, footer {
+.flex-center, #nav__katalog, #gallery__plus, #child, #instagram, header, footer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -155,7 +155,7 @@ table {
 #nav__katalog {
   width: 100%;
   height: 300px;
-  background-color: #cbc2b9;
+  background-color: #faf8f6;
   -webkit-box-shadow: 1px 1px 5px gray;
           box-shadow: 1px 1px 5px gray;
 }
@@ -233,9 +233,41 @@ table {
      object-fit: cover;
 }
 
+#child {
+  height: 700px;
+  background-color: #faf8f6;
+}
+
+#child__slider {
+  height: 400px;
+  width: 80%;
+  position: relative;
+}
+
+#child ul {
+  border: 1px solid #372424;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#child ul li {
+  border: 1px solid black;
+  height: 400px;
+  width: calc(98%/3);
+  margin-bottom: 0;
+}
+
+#child ul li img {
+  width: 100%;
+  height: 100%;
+}
+
 #instagram {
+  border-top: 1px solid #372424;
   height: 200px;
-  background-color: #cbc2b9;
+  background-color: #faf8f6;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

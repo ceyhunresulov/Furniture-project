@@ -20,8 +20,39 @@
     }
 }
 
+#child{
+    height: 700px;
+    background-color: $secondary-color;
+    @extend .flex-center;
+    &__slider{
+        height: 400px;
+        width: 80%;
+        position: relative;
+    }
+    ul{
+        border: 1px solid $main-color;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @extend .flex-center-y;
+        li{
+            border: 1px solid black;
+            height: 400px;
+            width: calc(98%/3);
+            margin-bottom:0;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+}
+
 
 #instagram{
+    border-top: 1px solid $main-color;
     height: 200px;
     background-color: $secondary-color;
     @extend .flex-center;
