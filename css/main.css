@@ -24,7 +24,7 @@ body {
           align-items: center;
 }
 
-.flex-center, #nav__katalog, #gallery__plus, #child, #instagram, header, footer {
+.flex-center, #nav__katalog, #gallery__plus, #instagram, header, footer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -45,7 +45,7 @@ body {
           justify-content: space-between;
 }
 
-.flex-y, #nav__katalog ul li {
+.flex-y, #nav__katalog ul li, #child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,6 +143,10 @@ table {
   text-align: center;
 }
 
+#child__title {
+  font-size: 3em;
+}
+
 #nav__top {
   width: 70%;
 }
@@ -154,10 +158,8 @@ table {
 
 #nav__katalog {
   width: 100%;
-  height: 300px;
-  background-color: #faf8f6;
-  -webkit-box-shadow: 1px 1px 5px gray;
-          box-shadow: 1px 1px 5px gray;
+  height: 450px;
+  background-color: white;
 }
 
 #nav__katalog ul {
@@ -170,13 +172,15 @@ table {
   border-radius: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 1px 1px 10px 2px black;
-          box-shadow: 1px 1px 10px 2px black;
+  border: 1px dashed #372424;
+  -webkit-box-shadow: 1px 1px 10px 2px gray;
+          box-shadow: 1px 1px 10px 2px gray;
 }
 
 #nav__katalog ul li a {
   width: 100px;
   height: 100px;
+  color: #372424;
 }
 
 #nav__katalog ul li a img {
@@ -235,7 +239,11 @@ table {
 
 #child {
   height: 700px;
-  background-color: #faf8f6;
+  background-color: white;
+}
+
+#child__title {
+  margin-bottom: 4em;
 }
 
 #child__slider {
@@ -267,7 +275,7 @@ table {
 #instagram {
   border-top: 1px solid #372424;
   height: 200px;
-  background-color: #faf8f6;
+  background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
