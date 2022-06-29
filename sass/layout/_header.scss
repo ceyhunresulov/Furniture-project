@@ -1,16 +1,11 @@
 header{
     width: 100%;
-    background-color: $main-color;
+    background-color: $thirdary-color;
+    position: fixed;
+    top: 20px;
     @extend .flex-center;
-    .header__logo{
-        height: 90px;
-        width: 100px;
-        overflow: hidden;
-        border-radius: 50%;
-        img{
-            width: 100%;
-            height: 100%;
-            transform: scale(1.7);
-        }
-    }
+}
+#contact__header{
+    position: static;
+    background-color: $main-color !important;
 }
