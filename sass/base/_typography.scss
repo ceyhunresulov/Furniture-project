@@ -1,22 +1,48 @@
-#nav__top, #nav__katalog,#nav__footer{
-    h1{
+// nav top
+#nav__top{
+    .pi{
         color: white;
         font-size: 3em;
     }
-    li{
+    .navbar__item--link{
         font-size: 2em;
         color: white;
     }
 }
+// bcimg 
 .pi__funiture{
     color: white;
     font-size: 5em;
     letter-spacing: 3px;
     font-family: "smoch",cursive;
 }
+
+
+// new models 
+ #new__models{
+    .new__title{
+        font-size: 3em;
+        color: black;
+    }
+    .models{
+        &__about{
+            &--info{
+                font-size: 2em;
+                color: black;
+            }
+        }
+    }
+
+ }
+// nav footer
 #nav__footer{
     a{
         color: white;
+    }
+    li{
+        font-size: 2em;
+        color: white;
+
     }
     
 }
@@ -57,4 +83,36 @@
     font-size: 1.5em;
     color: $main-color;
 
+}
+
+
+// dropdown 
+.catalog__dropdown{
+    background-color: $thirdary-color;
+    li{
+        transition: all ease 2s;
+        // font-size: 0 !important;
+    }
+}
+
+
+
+// mobile 
+
+// mobile header 
+header{
+    .mobil__navbar{
+        &--link{
+            color: white;
+            font-size: 2em ;
+        }
+    }
+}
+
+// mobil dropdown 
+.mobil__catalog--dropdown{
+    .mobil__catalog--link{
+        color: white;
+        font-size: 1.5em;
+    }
 }

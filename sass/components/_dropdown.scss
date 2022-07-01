@@ -1,0 +1,32 @@
+.catalog__dropdown{
+    height: auto !important;
+    width: 150px !important;
+    height: 300px !important;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%);
+    @extend .flex-y;
+    li{
+        margin-bottom: .5em;
+    }
+    hr{
+        width: 100%;
+        border-top: none;
+    }
+}
+.catalog__dropdown--contact{
+    background-color: $main-color;
+}
+
+
+// mobil dropdown 
+
+.mobil__catalog--dropdown{
+    width: 150px;
+    @extend .flex-y;
+    .mobil__catalog--item{
+        margin: .3em 0;
+    }
+}

@@ -1,43 +1,14 @@
 #nav__top{
     width: 70%;
     @extend .flex-center-y;
-    ul{
+    .navbar{
         width: 40%;
         height: 100px;
-        @extend .flex-center-y
-    }
-}
-#nav__katalog{
-    width: 100%;
-    height: 450px;
-    background-color: $secondary-color;
-    @extend .flex-center;
-    ul{
-        width: 80%;
         @extend .flex-center-y;
         li{
-            margin: 0.5em;
-            padding: 2em;
-            border-radius: 20px;
-            box-sizing: border-box;
-            border: 1px dashed $main-color;
-            box-shadow: 1px 1px 10px 2px gray;
-            @extend .flex-y;  
-            a{
-                width: 100px;
-                height: 100px;
-                color: $main-color;
-                img{
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            i{
-                display: block;
-            }
+            position: relative;
         }
-
-    }  
+    }
 }
 
 #nav__footer{
@@ -54,4 +25,13 @@
     width: 100%;
     height: 100px;
     @extend .flex-center;
+}
+
+
+// mobil navbar icon 
+
+#nav__top{
+    .navbar__icon{
+        display: none;
+    }
 }

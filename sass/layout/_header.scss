@@ -9,3 +9,30 @@ header{
     position: static;
     background-color: $main-color !important;
 }
+
+
+// mobile header 
+header{
+    .mobil__navbar{
+        display: none !important;
+        background-color: $thirdary-color;
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: $header-heigth;
+        @extend .flex-y;
+        hr{
+            width: 100%;
+            border-top: none;
+        }
+        &--item{
+           margin: .8em 0;
+           width: 100%;
+           text-align: center;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+
+        }
+    }
+}

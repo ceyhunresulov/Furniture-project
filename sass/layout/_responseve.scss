@@ -1,0 +1,136 @@
+// desktop
+@media  (min-width: 1198px){
+    #gallery{
+        &__grid{
+            li{
+                @include grid(4,2%);
+                height:250px;
+            } 
+             
+        }
+    }
+}
+// tablet
+@media  (max-width: 1198px) and (min-width:720px){
+    body{
+        font-size: 9px !important;
+    }
+    // header
+    header{
+        position: relative;
+        #nav__top{
+            height: $header-heigth;
+            .navbar__icon{
+                display: block !important;
+            }
+            .navbar{
+                display: none !important;
+            }
+           }
+
+    }
+    // gallery 
+    #gallery{
+        &__grid{
+           li{
+            @include grid(3,2%);
+            height: 270px;
+           }
+        }
+    }
+    // child
+    #child{
+        &__slider{
+            overflow: hidden;
+            width: 800px !important;
+        }
+        .child__slide{
+            width: 400px;
+            margin-right: 10px;
+        }
+    }
+
+   
+}
+
+// laptop
+@media  (max-width: 720px) and (min-width:500px){
+    body{
+        font-size: 8px !important;
+    }
+    // header
+    header{
+        position: relative;
+        #nav__top{
+            height: $header-heigth;
+            .navbar__icon{
+                display: block !important;
+            }
+            .navbar{
+                display: none !important;
+            }
+           }
+
+    }
+    // gallery 
+    #gallery{
+        &__grid{
+           li{
+            @include grid(2,1%);
+            height: 300px;
+           }
+        }
+    }
+
+    // child 
+    #child{
+        &__slider{
+            overflow: hidden;
+            width: 500px !important;
+            height: 300px !important;
+        }
+        .child__slides{
+            height: 300px !important;
+        }
+        .child__slide{
+            width: 500px;
+            height: 300px;
+        }
+    }
+
+   
+}
+
+
+// phone 
+@media  (max-width: 500px){
+    body{
+        font-size: 7px !important;
+    }
+    // header
+    header{
+        position: relative;
+        #nav__top{
+            height: $header-heigth;
+            .navbar__icon{
+                display: block !important;
+            }
+            .navbar{
+                display: none !important;
+            }
+           }
+
+    }
+    // gallery 
+    #gallery{
+        &__grid{
+           li{
+            @include grid(1,0);
+            height: 300px;
+            margin-bottom: 2%;
+           }
+        }
+    }
+
+   
+}

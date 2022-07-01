@@ -25,11 +25,86 @@
     <header>
       <nav id="nav__top">
         <h1 class="pi">Pİ</h1>
-        <ul>
-          <li><a href="index.html">ev</a></li>
-          <li><a href="about.html">haqqimizda</a></li>
-          <li><a href="catalog.html">kataloq</a></li>
-          <li><a href="contact.html">contact</a></li>
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="index.html">Ev</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="about.html">Haqqimizda</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="#">Kataloq</a>
+            <ul class="catalog__dropdown">
+              <li><a class="navbar__item--link" href="">yataq</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="">divan</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="">kreslo</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="">bufik</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="">usaq mebelleri</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="">ofis mebelleri</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="">digerleri</a></li>
+              <hr />
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- mobil navbar -->
+        <button class="navbar__icon"><i class="fab fa-whatsapp"></i></button>
+        <ul class="mobil__navbar">
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="">Ev</a>
+          </li>
+          <hr />
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="">Haqqimizda</a>
+          </li>
+          <hr />
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="">Kataloq</a>
+            <ul class="mobil__catalog--dropdown">
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">yataq</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">divan</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">kreslo</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">bufik</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">usaq mebelleri</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">ofis mebelleri</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="">digerleri</a>
+              </li>
+              <hr />
+            </ul>
+          </li>
+          <hr />
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="">Contact</a>
+          </li>
+          <hr />
         </ul>
       </nav>
     </header>
@@ -40,37 +115,29 @@
         <h1 class="pi__funiture">Pİ FURNİTURE</h1>
       </div>
     </section>
+    <!-- new models slider -->
+    <section id="new__models">
+      <h1 class="new__title">Yeni Model</h1>
+      <div class="models">
+        <div class="models__img--box">
+          <img
+            class="models__img"
+            src="./img/living-room-furniture-0.jpg"
+            alt=""
+          />
+        </div>
+        <div class="models__about">
+          <p class="models__about--info">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+            nesciunt! Velit fugit delectus eveniet error quas corporis
+            consectetur accusamus labore?
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- gallery -->
     <section id="gallery">
-      <nav id="nav__katalog">
-        <ul>
-          <li>
-            <a href=""><img src="./img/couch.png" alt="" /></a>
-            <i>Divan</i>
-          </li>
-          <li>
-            <a href=""><img src="./img/double-bed.png" alt="" /></a>
-            <i>Yataq</i>
-          </li>
-          <li>
-            <a href=""><img src="./img/armchair.png" alt="" /></a>
-            <i>Kreslo</i>
-          </li>
-          <li>
-            <a href=""><img src="./img/ottoman (1).png" alt="" /></a>
-            <i>Bufik</i>
-          </li>
-          <li>
-            <a href=""><img src="./img/baby-crib.png" alt="" /></a>
-            <i>Usaq</i>
-          </li>
-          <li>
-            <a href=""><img src="./img/chair.png" alt="" /></a>
-            <i>Ofis</i>
-          </li>
-        </ul>
-      </nav>
       <h1 id="gallery__title">Butun Mebeller</h1>
       <ul id="gallery__grid">
         <li>
@@ -124,6 +191,12 @@
         <li>
           <img src="./img/living-room-furniture-0.jpg" alt="" />
         </li>
+        <li>
+          <img src="./img/living-room-furniture-0.jpg" alt="" />
+        </li>
+        <li>
+          <img src="./img/living-room-furniture-0.jpg" alt="" />
+        </li>
       </ul>
       <nav id="gallery__plus">
         <button class="button__plus">daha cox goster</button>
@@ -132,14 +205,14 @@
     <section id="child">
       <h1 id="child__title">Usaq Mebelleri</h1>
       <div id="child__slider">
-        <ul>
-          <li>
+        <ul class="child__slides">
+          <li class="child__slide">
             <img src="./img/living-room-furniture-0.jpg" alt="" />
           </li>
-          <li>
+          <li class="child__slide">
             <img src="./img/parco-cover.jpg" alt="" />
           </li>
-          <li>
+          <li class="child__slide">
             <img src="./img/living-room-furniture-0.jpg" alt="" />
           </li>
         </ul>
