@@ -5,8 +5,7 @@
             li{
                 @include grid(4,2%);
                 height:250px;
-            } 
-             
+            }              
         }
     }
 }
@@ -49,8 +48,6 @@
             margin-right: 10px;
         }
     }
-
-   
 }
 
 // laptop
@@ -96,9 +93,7 @@
             width: 500px;
             height: 300px;
         }
-    }
-
-   
+    }   
 }
 
 
@@ -118,8 +113,7 @@
             .navbar{
                 display: none !important;
             }
-           }
-
+        }
     }
     // gallery 
     #gallery{
@@ -130,7 +124,5 @@
             margin-bottom: 2%;
            }
         }
-    }
-
-   
+    }  
 }

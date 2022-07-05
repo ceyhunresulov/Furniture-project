@@ -33,7 +33,7 @@
           <a class="navbar__item--link" href="about.html">Haqqimizda</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__item--link" href="catalog.html">Kataloq</a>
+          <a class="navbar__item--link" href="#">Kataloq</a>
           <ul class="catalog__dropdown catalog__dropdown--contact">
             <li><a class="navbar__item--link" href="">yataq</a></li>
             <hr />
@@ -58,29 +58,65 @@
     </nav>
   </header>
   <!-- contact  -->
-  <section id="contact">
-    <h1 id="contact__title">Contact</h1>
-    <form action="">
-      <div class="fullname">
-        <input type="text" id="name" placeholder="Ad" />
-        <input type="text" id="lname" placeholder="Soyad" />
+  <section id="catalog">
+    <aside id="catalog__sidebar">
+      <div id="catalog__sidebar--box">
+        <h1 id="catalog__sidebar--title">Çeşidlər</h1>
+        <ul id="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">butun mebeller</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">carpayilar</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">divanlar</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">kreslolar</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">usaq mebelleri</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">ofis mebelleri</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">qapilar</a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="">digerleri </a>
+            <span class="catalog__item--count">(22)</span>
+          </li>
+          <hr />
+        </ul>
       </div>
-      <div class="email">
-        <input type="email" id="email" placeholder="email" /><br />
-      </div>
-      <div class="textarea">
-        <textarea
-          name=""
-          id="textarea"
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-      </div>
-      <div class="post">
-        <button type="submit" id="submit">Göndər</button>
-      </div>
-    </form>
+    </aside>
+    <div id="catalog__gallery">
+      <h1 id="catalog__gallery--title">Butun Mebeller</h1>
+      <ul id="catalog__gallery--grid">
+        <li>
+          <img src="./img/living-room-furniture-0.jpg" alt="" />
+          <a href="product.html" class="catalog__gallery--hover">
+            <i class="far fa-eye"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- instagram -->

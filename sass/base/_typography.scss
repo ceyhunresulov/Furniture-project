@@ -1,3 +1,4 @@
+// HOME 
 // nav top
 #nav__top{
     .pi{
@@ -34,6 +35,20 @@
     }
 
  }
+// child
+
+#child{
+    .child__angle{
+        button{
+            font-size: 1.5em;
+            color: $main-color;
+        }
+        .fas{
+            font-size: 1.5em;
+        }
+
+    }
+}
 // nav footer
 #nav__footer{
     a{
@@ -42,9 +57,14 @@
     li{
         font-size: 2em;
         color: white;
-
     }
-    
+    .footer__title{
+        font-size: 2.3em;
+        color: white;
+    }
+    hr{
+        border-top: none;
+    }
 }
 #instagram{
     a{
@@ -65,9 +85,36 @@
 #child__title{
     font-size: 3em;
 }
+//CATALOG 
+#catalog{
+    &__sidebar{
+        &--title{
+            font-size: 2.3em;
+            color: $font-color-first;
+            font-weight: bold;
+        }
+    }
+    &__gallery{
+        &--title{
+            font-size: 3em;
+            color: $main-color;
+        }
+    }
+    &__list{
+        .catalog__item{
+            &--link{
+                font-size: 2em;
+                color: $font-color-first;
+            }
+            &--count{
+                font-size: 1.3em;
+                color:$font-color-first
+            }
+        }
+    }
+}
 
-
-// contact
+// CONTACT
 #contact{
     &__title{
         font-size: 3em;
@@ -84,8 +131,6 @@
     color: $main-color;
 
 }
-
-
 // dropdown 
 .catalog__dropdown{
     background-color: $thirdary-color;
@@ -94,6 +139,15 @@
         // font-size: 0 !important;
     }
 }
+// dropdown
+
+
+
+
+
+
+
+
 
 
 
@@ -116,3 +170,6 @@ header{
         font-size: 1.5em;
     }
 }
+
+
+// mobile 
