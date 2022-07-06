@@ -1,15 +1,17 @@
 .catalog__dropdown{
-    height: auto !important;
     width: 150px !important;
-    height: 300px !important;
+    height: 0px !important;
     position: absolute;
     top: 60px;
     left: 50%;
     z-index: 10000;
     transform: translate(-50%);
+    transition: all ease .5s;
+    overflow: hidden;
     @extend .flex-y;
     li{
         margin-bottom: .5em;
+        font-size: 1em;
     }
     hr{
         width: 100%;
@@ -19,7 +21,13 @@
 .catalog__dropdown--contact{
     background-color: $main-color;
 }
-
+.catalog__item{
+    &:hover{
+        .catalog__dropdown{
+            height: 300px !important;
+        }
+    }
+}
 
 // mobil dropdown 
 

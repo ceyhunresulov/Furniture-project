@@ -380,6 +380,8 @@ header .mobil__navbar--link {
 
 #nav__top .navbar li {
   position: relative;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 #nav__footer {
@@ -635,19 +637,22 @@ footer .logo img {
 }
 
 .catalog__dropdown {
-  height: auto !important;
   width: 150px !important;
-  height: 300px !important;
+  height: 0px !important;
   position: absolute;
   top: 60px;
   left: 50%;
   z-index: 10000;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  overflow: hidden;
 }
 
 .catalog__dropdown li {
   margin-bottom: .5em;
+  font-size: 1em;
 }
 
 .catalog__dropdown hr {
@@ -657,6 +662,10 @@ footer .logo img {
 
 .catalog__dropdown--contact {
   background-color: #302928;
+}
+
+.catalog__item:hover .catalog__dropdown {
+  height: 300px !important;
 }
 
 .mobil__catalog--dropdown {
