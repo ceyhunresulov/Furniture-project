@@ -131,6 +131,21 @@
     color: $main-color;
 
 }
+// Product
+.product{
+    &__title{
+        font-size: 2.5em;
+        color: black;
+    }
+    &__info{
+        border: 1px solid blue;
+        &--item{
+            font-size: 2em;
+        }
+    }
+}
+
+
 // dropdown 
 .catalog__dropdown{
     background-color: $thirdary-color;

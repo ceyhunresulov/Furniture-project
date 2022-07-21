@@ -1,4 +1,5 @@
 #catalog{
+    margin-top: 100px;
     width: 100%;
     @extend .flex-between;
     &__sidebar{
@@ -33,8 +34,6 @@
             flex-wrap: wrap;
             li{
                 position: relative;
-                height: 300px;
-                @include grid(2,2%)
             }
             img{
                 width: 100%;

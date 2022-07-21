@@ -32,22 +32,36 @@
         <li class="navbar__item">
           <a class="navbar__item--link" href="about.html">Haqqimizda</a>
         </li>
-        <li class="navbar__item">
+        <li class="navbar__item catalog__item">
           <a class="navbar__item--link" href="catalog.html">Kataloq</a>
           <ul class="catalog__dropdown catalog__dropdown--contact">
-            <li><a class="navbar__item--link" href="">yataq</a></li>
+            <li>
+              <a class="navbar__item--link" href="">yataq</a>
+            </li>
             <hr />
-            <li><a class="navbar__item--link" href="">divan</a></li>
+            <li>
+              <a class="navbar__item--link" href="">divan</a>
+            </li>
             <hr />
-            <li><a class="navbar__item--link" href="">kreslo</a></li>
+            <li>
+              <a class="navbar__item--link" href="">kreslo</a>
+            </li>
             <hr />
-            <li><a class="navbar__item--link" href="">bufik</a></li>
+            <li>
+              <a class="navbar__item--link" href="">bufik</a>
+            </li>
             <hr />
-            <li><a class="navbar__item--link" href="">usaq mebelleri</a></li>
+            <li>
+              <a class="navbar__item--link" href="">usaq mebelleri</a>
+            </li>
             <hr />
-            <li><a class="navbar__item--link" href="">ofis mebelleri</a></li>
+            <li>
+              <a class="navbar__item--link" href="">ofis mebelleri</a>
+            </li>
             <hr />
-            <li><a class="navbar__item--link" href="">digerleri</a></li>
+            <li>
+              <a class="navbar__item--link" href="">digerleri</a>
+            </li>
             <hr />
           </ul>
         </li>
@@ -57,11 +71,36 @@
       </ul>
     </nav>
   </header>
-  <!-- contact  -->
-  <section id="product">product</section>
+  <!-- product  -->
+  <section class="product">
+    <h1 class="product__title">Mehsul</h1>
+    <div class="product__slider">
+      <div class="product__slides">
+        <div class="product__slide">
+          <img class="product__slide--img" src="img/backimage.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="product__angle">
+      <button class="product__angle--left">
+        <i class="fas fa-angle-left"></i>
+      </button>
+      <button class="product__angle--right">
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </div>
+    <div class="product__info">
+      <ul class="product__info--list">
+        <li class="product__info--item">olcu: 1X4</li>
+        <li class="product__info--item">reng: mavi</li>
+        <li class="product__info--item">taxta: fistiq agaci</li>
+        <li class="product__info--item">parca: turkiye parcasi</li>
+      </ul>
+    </div>
+  </section>
   <!-- instagram -->
   <section id="instagram">
-    <h2><a href="">mebel_pi_mebel</a><br /></h2>
+    <h2><a href="">pi_mebel</a><br /></h2>
     <a href=""><i class="fab fa-instagram"></i></a>
   </section>
   <!-- footer  -->
@@ -95,7 +134,9 @@
         <hr />
         <li><i class="fas fa-phone"></i> 050 868 11 00</li>
         <li><i class="fas fa-phone"></i> 051 947 07 14</li>
-        <li><i class="fas fa-at"></i> <a href="">pifurnitre@gmail.com</a></li>
+        <li class="flex-between">
+          <i class="fas fa-at"></i> <a href="">pifurnitre@gmail.com</a>
+        </li>
       </ul>
       <ul class="sosial">
         <h1 class="footer__title">Sosial</h1>
@@ -122,4 +163,5 @@
       </ul>
     </nav>
   </footer>
+  <script src="index.js"></script>
 </body>

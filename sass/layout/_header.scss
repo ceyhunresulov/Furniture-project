@@ -2,12 +2,18 @@ header{
     width: 100%;
     background-color: $thirdary-color;
     position: fixed;
-    top: 20px;
+    top: 0;
+    height: 100px;
     @extend .flex-center;
+    z-index: 5;
+    transition: all linear .6s;
 }
 #contact__header{
-    position: static;
+    position: fixed;
     background-color: $main-color !important;
+    top: 0;
+    transition: all linear .6s;
+
 }
 
 
