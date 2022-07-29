@@ -1,5 +1,37 @@
 // home
-
+// gallery big image 
+.big__img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $big-bck;
+    z-index: 6;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .5s;
+    @extend .flex-center;
+    &--control{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    &--link{
+        margin-right: 2em;
+    }
+    &--reset{
+        cursor: pointer;
+    
+    }
+    &--box{
+        border: 1px solid white;
+        width: auto;
+        height: auto;
+    }
+}
 // bacground iamge 
 #bcimg{
     height:calc(100vw/2) ;
@@ -57,12 +89,37 @@
     &__grid{
         display: flex;
         flex-wrap: wrap;
-        li{     
+        li{  
+            position: relative;   
             background-color:white;
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+            .hover__box{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: $thirdary-color;
+                opacity: 0;
+                @extend .flex-center;
+                transition: all ease .5s;
+                .far,.fas{
+                    color: white;
+                    font-size: 2em;
+                    cursor: pointer;
+                }
+                .fas{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                }
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
     }

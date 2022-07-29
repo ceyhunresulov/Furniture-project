@@ -10,7 +10,6 @@ window.addEventListener("scroll", getScroll);
 function getScroll() {
   if (window.scrollY > 250) {
     changeHeaderStyle();
-    console.log(window.scrollY);
   } else {
     header.style.background = headerColor1;
     header.style.height = 100 + "px";

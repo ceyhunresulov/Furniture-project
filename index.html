@@ -21,6 +21,17 @@
     <title>furniture</title>
   </head>
   <body>
+    <div class="big__img">
+      <div class="big__img--control">
+        <a href="product.html" class="big__img--link"
+          ><i class="far fa-eye"></i
+        ></a>
+        <a class="big__img--reset"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="big__img--box">
+        <img src="./img/living-room-furniture-0.jpg" alt="" />
+      </div>
+    </div>
     <!-- header -->
     <header id="index__header">
       <nav id="nav__top">
@@ -142,6 +153,12 @@
       <ul id="gallery__grid">
         <li>
           <img src="./img/living-room-furniture-0.jpg" alt="" />
+          <div class="hover__box">
+            <a href="product.html"><i class="far fa-eye"></i></a>
+            <a id="expand">
+              <i class="fas fa-expand"></i>
+            </a>
+          </div>
         </li>
         <li>
           <img
@@ -167,41 +184,13 @@
         <li>
           <img src="./img/living-room-furniture-0.jpg" alt="" />
         </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/modern-contemporary-bedroom-furniture.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/parco-cover.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/nathan-oakley-q2xKzfyg83w-unsplash.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/living-room-furniture-0.jpg" alt="" />
-        </li>
       </ul>
       <nav id="gallery__plus">
         <button class="button__plus">daha cox goster</button>
       </nav>
     </section>
+    4
+    <!-- child slider -->
     <section id="child">
       <h1 id="child__title">Usaq Mebelleri</h1>
       <div id="child__slider">
@@ -211,6 +200,9 @@
           </li>
           <li class="child__slide">
             <img src="./img/parco-cover.jpg" alt="" />
+          </li>
+          <li class="child__slide">
+            <img src="./img/living-room-furniture-0.jpg" alt="" />
           </li>
           <li class="child__slide">
             <img src="./img/living-room-furniture-0.jpg" alt="" />
@@ -293,5 +285,7 @@
       </nav>
     </footer>
     <script src="index.js"></script>
+    <script src="gallery.js"></script>
+    <script src="child.js"></script>
   </body>
 </html>

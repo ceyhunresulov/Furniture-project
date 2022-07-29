@@ -1,5 +1,18 @@
 // HOME 
 // nav top
+
+// big image
+.big__img{
+    &--link{
+        font-size: 2em;
+        color: white;
+    }
+    &--reset{
+        font-size: 3em;
+        color: white;
+    }
+}
+
 #nav__top{
     .pi{
         color: white;

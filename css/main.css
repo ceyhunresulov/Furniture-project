@@ -37,7 +37,7 @@ body {
           align-items: center;
 }
 
-.flex-center, #gallery__plus, #bcimg__box, #instagram, header, footer {
+.flex-center, #gallery__plus, .big__img, #bcimg__box, #gallery__grid li .hover__box, #instagram, header, footer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -128,6 +128,16 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.big__img--link {
+  font-size: 2em;
+  color: white;
+}
+
+.big__img--reset {
+  font-size: 3em;
+  color: white;
 }
 
 #nav__top .pi {
@@ -543,6 +553,46 @@ header .mobil__navbar--link {
   display: none;
 }
 
+.big__img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 6;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.big__img--control {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big__img--link {
+  margin-right: 2em;
+}
+
+.big__img--reset {
+  cursor: pointer;
+}
+
+.big__img--box {
+  border: 1px solid white;
+  width: auto;
+  height: auto;
+}
+
 #bcimg {
   height: calc(100vw/2);
 }
@@ -609,6 +659,7 @@ header .mobil__navbar--link {
 }
 
 #gallery__grid li {
+  position: relative;
   background-color: white;
 }
 
@@ -617,6 +668,34 @@ header .mobil__navbar--link {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#gallery__grid li .hover__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30, 29, 28, 0.5);
+  opacity: 0;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+#gallery__grid li .hover__box .far, #gallery__grid li .hover__box .fas {
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#gallery__grid li .hover__box .fas {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+#gallery__grid li .hover__box:hover {
+  opacity: 1;
 }
 
 #child {
@@ -631,7 +710,7 @@ header .mobil__navbar--link {
 #child__slider {
   border: 3px solid #302928;
   height: 350px;
-  width: 1400px;
+  width: 1200px;
   overflow: hidden;
   position: relative;
   z-index: -1;
@@ -912,8 +991,7 @@ footer .logo img {
 #child__slider {
   border: 3px solid #302928;
   height: 350px;
-  width: 1400px;
-  overflow: hidden;
+  width: 1200px;
   position: relative;
   z-index: -1;
 }
@@ -924,13 +1002,16 @@ footer .logo img {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: all linear 1s;
+  transition: all linear 1s;
 }
 
 #child ul li {
   border: 1px solid black;
   height: 100%;
-  width: calc(98%/3);
+  width: 595px;
   margin-bottom: 0;
+  margin-right: 10px;
 }
 
 #child ul li img {
