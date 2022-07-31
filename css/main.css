@@ -297,6 +297,9 @@ header .mobil__navbar--link {
   #catalog__gallery--grid li:nth-child(2n) {
     margin-right: 0;
   }
+  #child .child__slide {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 1198px) and (min-width: 720px) {
@@ -332,8 +335,9 @@ header .mobil__navbar--link {
     width: 710px !important;
   }
   #child .child__slide {
-    width: 350px;
-    margin-right: 10px;
+    width: 710px;
+    margin: 0;
+    border-right: 3px solid white;
   }
   #catalog__gallery--grid li {
     height: 300px;
@@ -395,10 +399,12 @@ header .mobil__navbar--link {
   }
   #child .child__slides {
     height: 300px !important;
+    border: none;
   }
   #child .child__slide {
     width: 500px;
     height: 300px;
+    border-right: 3px solid white;
   }
   #catalog__gallery--grid li {
     width: calc(100%);
@@ -989,7 +995,7 @@ footer .logo img {
 }
 
 #child__slider {
-  border: 3px solid #302928;
+  border: none;
   height: 350px;
   width: 1200px;
   position: relative;
@@ -997,7 +1003,6 @@ footer .logo img {
 }
 
 #child ul {
-  border: 1px solid #302928;
   height: 350px;
   position: absolute;
   top: 0;
@@ -1007,11 +1012,10 @@ footer .logo img {
 }
 
 #child ul li {
-  border: 1px solid black;
+  border: none;
   height: 100%;
   width: 595px;
   margin-bottom: 0;
-  margin-right: 10px;
 }
 
 #child ul li img {

@@ -17,6 +17,11 @@
             }
         }
     }
+    #child{
+        .child__slide{
+            margin-right: 10px;
+        }
+    }
 }
 // tablet
 @media  (max-width: 1198px) and (min-width:720px){
@@ -54,8 +59,9 @@
             width: 710px !important;
         }
         .child__slide{
-            width: 350px;
-            margin-right: 10px;
+            width: 710px;
+            margin: 0;
+            border-right: 3px solid white;
         }
     }
     // catalog
@@ -123,10 +129,12 @@
         }
         .child__slides{
             height: 300px !important;
+            border: none;
         }
         .child__slide{
             width: 500px;
             height: 300px;
+            border-right: 3px solid white;
         }
     } 
     // catalog 
