@@ -6,7 +6,7 @@
     &__box{
         height: 100%;
         width: 100%;
-        background-image: url("/img/backimage2.jpg");
+        background-image: url("/img/backimage.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         @extend .flex-center;
@@ -56,6 +56,7 @@
     &__grid{
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
         li{     
             background-color:white;
             img{

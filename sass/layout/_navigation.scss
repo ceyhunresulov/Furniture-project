@@ -32,6 +32,26 @@
 
 #nav__top{
     .navbar__icon{
+        position: relative;
+        cursor: pointer;
         display: none;
+        background: none;
+        color: white;
+        border-color: white;
+        width: 30px;
+        height: 30px;
+        .fas{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);    
+            font-size: 18px;
+            transition: all ease .5s;
+        }
+        .del{
+            visibility: hidden;
+            opacity: 0;
+            transition: all ease .5s;
+        }
     }
 }
